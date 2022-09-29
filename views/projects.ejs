@@ -1,0 +1,48 @@
+<%- include partials/header.ejs %>
+  <%- include partials/main_nav.ejs %>
+
+    <!--Main Content-->
+    <main class="container">
+      <div class="bg-light p-5 rounded-lg m-3">
+        <h1 class="display-4">Welcome to the <%= title %> page</h1>
+      </div>
+      <!--First project-->
+      <h4>1.Windows Form Application</h4>
+      <p>This is a Coffee shop windows form application developed with C# in Visual Studio. I was responsible for
+        building windows GUI app for managing customer and orders info as well as designing code for parsing
+      JSON and saving data into file system. </p>
+
+      
+                <div id="gallery">
+                    <img src="/Assets/images/project1-1.png" width="350" height="280" alt="form1">
+                    <img src="/Assets/images/project1-2.png" width="350" height="280" alt="form2">
+                    <img src="/Assets/images/project1-3.png" width="350" height="280" alt="form3">
+                </div>
+                
+                <!--Second Project info-->
+                <br><h4>2.Web Application</h4>
+                <p>I designed and developed a restaurant website using JavaScript and integrated with Weather API,
+                  Google MAP API, as well as creating tables, and form validation and cookies.
+                </p>
+                <div id="gallery">
+                    <img src="/Assets/images/project2-1.png" width="250" height="190" alt="entry">
+                    <img src="/Assets/images/project2-2.png" width="250" height="190" alt="dnning">
+                    <img src="/Assets/images/project2-3.png" width="250" height="190" alt="living">
+                    <img src="/Assets/images/project-2-4.png" width="250" height="190" alt="living">
+                </div>
+
+                <!--Third project info-->
+                <br><h4>3.Requirements Analysis</h4>
+                <p>In this software requirements specification group project, I was responsible for creating use case,
+                  drawing diagrams, analyze functional/non-functional requirements, and making CRC cards.
+                </p>
+                <div id="gallery">
+                    <img src="/Assets/images/project3-1.png" width="350" height="280" alt="form1">
+                    <img src="/Assets/images/project3-2.png" width="350" height="280" alt="form2">
+                    <img src="/Assets/images/project3-3.png" width="350" height="280" alt="form3">
+
+                </div>
+    </main>
+
+    <%- include partials/bottom_nav.ejs %>
+      <%- include partials/footer.ejs %>

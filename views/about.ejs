@@ -1,0 +1,39 @@
+<%- include partials/header.ejs %>
+  <%- include partials/main_nav.ejs %>
+
+    <!--Main Content-->
+    <main class="container contentHeight">
+      <div class="bg-light p-5 rounded-lg m-3">
+        <h1 class="display-4">Welcome to the <%= title %> page</h1>
+      </div>
+      
+      <div class="container text-center">
+        <div class="row g-2">
+          <div class="col-6">
+            <div class="p-3 ">
+              <image src="/Assets/images/self.JPG" alt="self photo" height="310;" width="380;">
+              </image>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3  ">
+              <div class="card" style="width: 30rem; margin-top: 30px;">
+                <div class="card-body">
+                  <h3 class="card-title">Betty Han</h3>
+                  <h6 class="card-subtitle mb-2 text-muted">AI Developer</h6>
+                  <p class="card-text">I am Betty Han - A Software Enginner Artificial Intellegence student from Centennial College.I love jogging, gardening, exploring nature.</p>
+                  <a href="/Assets/files/Resume BettyHan.pdf" class="card-link" target="_blank">Resume Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </main>
+
+    <%- include partials/bottom_nav.ejs %>
+      <%- include partials/footer.ejs %>

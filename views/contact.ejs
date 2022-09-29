@@ -1,0 +1,81 @@
+<%- include partials/header.ejs %>
+  <%- include partials/main_nav.ejs %>
+
+    <!--Main Content Contact info-->
+    <main class="container">
+      <div class="bg-light p-5 rounded-lg m-3">
+        <h1 class="display-4">Welcome to the <%= title %> page</h1>
+      </div>
+
+      <div class="row g-2">
+        <div class="col-8">
+          <div class="p-3 ">
+            <form method="get" action="/home">
+                <!--  <fieldset>
+                     <legend>
+                         <h2>My Contact Info</h2>
+                     </legend>
+                     <p><label>Name:</label> Betty Han</p>
+                     <p><label>Phone:</label>647-928-6226</p>
+                     <p><label>Email:</label>xiaolei_han@yahoo.ca</p>
+                 </fieldset> -->
+             <!--Contact Form-->
+                 <fieldset>
+                     <legend>
+                         <h2>Contact Me</h2>
+                     </legend>
+                     <p>
+                         <label for="txtFName">First Name:</label>
+                         <input id="txtFName" name="txtFName" size="25" tabindex="1" type="text" required>
+                     </p>
+                     <p>
+                         <label for="txtLName">Last Name:</label>
+                         <input id="txtLName" name="txtLName" size="25" tabindex="1" type="text" required>
+                     </p>
+                     <p>
+                         <label for="txtNumber">Contact Number:</label>
+                         <input id="txtNumber" name="txtNumber" size="25" tabindex="1" type="text" required>
+                     </p>
+                     <p>
+                         <label for="txtEmail">Email:</label>
+                         <input id="txtEmail" name="txtEmail" size="25" tabindex="1" type="text" required>
+                     </p>
+                     <p>
+                         <label for="txtMesg">Message:</label>
+                         <textarea id="txtMesg" cols="28" name="txtImprove" rows="6" tabindex="37" placeholder="Please leave your message here"></textarea>
+                     </p>
+                 </fieldset>
+                 <div style="text-align:center">
+                     <input name="btnSubmit" tabindex="39" type="submit" value="Submit" class="btn" style="width: 150px; margin: 0 auto;">
+                     <input name="btnReset" tabindex="41" type="reset" value="Clear Form" class="btn" style="width: 150px; margin: 0 auto;">
+                 </div>
+             </form>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="p-3  ">
+            <div class="card" style="width: 18rem; margin-top: 30px;">
+                <div class="card-body bg-light">       
+                  <p class="card-text">
+                    <p><strong>Name: Betty Han</strong></p>
+                    <p>Phone:647-928-6226
+                    <p>Email:xiaolei_han@yahoo.ca</p>
+                  </p>         
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+
+ 
+
+
+
+
+      
+    </main>
+
+    <%- include partials/bottom_nav.ejs %>
+      <%- include partials/footer.ejs %>
