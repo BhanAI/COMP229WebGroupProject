@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Incident } from '../model/incident.model';
 import { IncidentRepository } from './../model/incident.repository';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-incident-list',
@@ -13,7 +14,8 @@ export class IncidentListComponent implements OnInit {
   public selectedPage = 1;
 
 
-  constructor(private repository: IncidentRepository) { }
+  constructor(private repository: IncidentRepository,
+    private router: Router) { }
 
   get incidents(): Incident[]
   {
@@ -25,6 +27,11 @@ export class IncidentListComponent implements OnInit {
   get users(): string[]
   {
     return this.repository.getUsers();
+  }
+
+  addIncident(incident: Incident): void {
+    
+    this.router.navigateByUrl('/addIncident');
   }
 
   ngOnInit(): void {

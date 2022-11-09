@@ -1,8 +1,7 @@
 module.exports = function () {
     return {
       "incident-list": [
-        {
-          
+        {        
 
           _id: 1,
           user: "Dune",

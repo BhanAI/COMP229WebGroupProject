@@ -5,7 +5,14 @@
   
       <!-- Books -->
       <div class="col-9 p-2">
+        
         <div *ngFor='let incident of incidents' class="card m-1 p-1 bg-light">
+          <div class="card-text bg-white p-1">{{ incident.narrative }}
+            <button class="btn btn-success btn-sm float-right"
+              (click)='addIncident(incident)'>
+              Add new incident
+            </button> 
+          </div>
           <h4>
             {{ incident._id }}
             <span class="badge badge-pill badge-primary float-right">
@@ -26,12 +33,7 @@
               {{ incident.date | currency: 'USD':'symbol':'2.2-2' }}
             </span>
           </h4>
-          <!-- <div class="card-text bg-white p-1">{{ incident.narrative }}
-            <button class="btn btn-success btn-sm float-right"
-              (click)='addBookToCart(book)'>
-              Add To Cart
-            </button> 
-          </div> -->
+          
         </div>
   
        <!--  <div class="form-inline float-left mr-1">
